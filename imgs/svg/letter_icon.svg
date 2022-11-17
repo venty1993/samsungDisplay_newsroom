@@ -1,0 +1,33 @@
+<svg id="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76.798" height="80.916" viewBox="0 0 76.798 80.916">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_110" data-name="사각형 110" width="76.798" height="80.916" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_109" data-name="사각형 109" width="76.798" height="80.917" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="사각형_108" data-name="사각형 108" width="38.188" height="80.916" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="그룹_66" data-name="그룹 66" clip-path="url(#clip-path)">
+    <rect id="사각형_105" data-name="사각형 105" width="76.057" height="52.738" transform="translate(0.149 28.178)" fill="#73bae5"/>
+    <path id="패스_69" data-name="패스 69" d="M.6,52.935H74.454L37.522,24.759Z" transform="translate(0.658 27.212)" fill="#43a9d1"/>
+    <path id="패스_70" data-name="패스 70" d="M0,13.424,38.162,41.6,76.318,13.424Z" transform="translate(0 14.755)" fill="#3991bc"/>
+    <path id="패스_71" data-name="패스 71" d="M.071,28.178H76.294L38.185,0Z" transform="translate(0.078 0.001)" fill="#9cdeff"/>
+    <path id="패스_72" data-name="패스 72" d="M58.2,10.559H5.676V25.368L31.921,44.752,58.2,25.368Z" transform="translate(6.239 11.606)" fill="#fff"/>
+    <rect id="사각형_106" data-name="사각형 106" width="38.191" height="3.021" transform="translate(19.511 29.244)" fill="#00354f"/>
+    <rect id="사각형_107" data-name="사각형 107" width="38.191" height="3.021" transform="translate(19.511 36.474)" fill="#00354f"/>
+    <g id="그룹_65" data-name="그룹 65" transform="translate(0 0)">
+      <g id="그룹_64" data-name="그룹 64" clip-path="url(#clip-path-2)">
+        <g id="그룹_63" data-name="그룹 63" transform="translate(38.61 0)" opacity="0.2">
+          <g id="그룹_62" data-name="그룹 62" transform="translate(0 0)">
+            <g id="그룹_61" data-name="그룹 61" clip-path="url(#clip-path-3)">
+              <path id="패스_73" data-name="패스 73" d="M18.469,0l-.076.057v80.86H56.415V28.26l.111-.082h.055Z" transform="translate(-18.393 0)" fill="#fff"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

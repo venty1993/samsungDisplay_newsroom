@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="closed_btn" data-name="closed btn" transform="translate(0.325)">
+    <rect id="사각형_608" data-name="사각형 608" width="42" height="42" transform="translate(-0.325)" fill="none"/>
+    <g id="X" transform="translate(13.879 13.879)">
+      <line id="선_30" data-name="선 30" y1="14.242" x2="14.242" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-width="1.4"/>
+      <line id="선_31" data-name="선 31" x1="14.242" y1="14.242" fill="none" stroke="#1d1d1d" stroke-linecap="round" stroke-width="1.4"/>
+    </g>
+  </g>
+</svg>

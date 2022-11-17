@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="11" viewBox="0 0 12 11">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="12" height="11" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="pause" clip-path="url(#clip-path)">
+    <g id="pause-2" data-name="pause" transform="translate(-944.731 -755.082)">
+      <rect id="Guide_box" data-name="Guide box" width="12" height="11" transform="translate(944.731 755.082)" fill="none"/>
+      <rect id="사각형_37" data-name="사각형 37" width="3" height="9" transform="translate(946.731 756.082)" fill="#1d1d1d"/>
+      <rect id="사각형_38" data-name="사각형 38" width="3" height="9" transform="translate(951.731 756.082)" fill="#1d1d1d"/>
+    </g>
+  </g>
+</svg>
