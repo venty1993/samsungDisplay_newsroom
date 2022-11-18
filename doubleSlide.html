@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .slide-wrapper {
+            display: flex;
+            border: 1px solid black;
+            width: fit-content;
+            margin: 100px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .slide {
+            width: 300px;
+            height: 200px;
+            /* border: 1px solid black; */
+            overflow: hidden;
+        }
+
+        .slide:first-child {
+            background-color: skyblue;
+        }
+
+        .contents-wrapper {
+            display: flex;
+            transition: 1s;
+            /* calc 안에 있는 0이 나중에 자바스크립트에서 인덱스로 관리할 값입니다.
+            이 값을 수정하면 슬라이드를 움직일 수 있어요  */
+            transform: translateX(calc(-300px * 0));
+        }
+        
+        .content {
+            flex-shrink: 0;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            font-size: 56px;
+        }
+    </style>
+</head>
+<body>
+        
+    <div class="slide-wrapper">    
+        <div class="slide">
+            <ul class="contents-wrapper">
+                <li class="content">1</li>
+                <li class="content">2</li>
+                <li class="content">3</li>
+                <li class="content">4</li>
+                <li class="content">5</li>
+            </ul>
+        </div>
+        <div class="slide">
+            <ul class="contents-wrapper">
+                <li class="content">1</li>
+                <li class="content">2</li>
+                <li class="content">3</li>
+                <li class="content">4</li>
+                <li class="content">5</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
