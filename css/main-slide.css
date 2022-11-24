@@ -15,6 +15,7 @@
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 24px;
 
 }
 
@@ -116,7 +117,57 @@
     transform: translate(50% , -50%);
 }
 
+.progress-button-container {
+    display: flex;
+    width: 160px;
+    height: 16px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 8px;
+}
 
+.buttons {
+    display: flex;
+    gap: 4px;
+    width: 100%;
+}
+
+.progress-button{
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #AAA;
+    transition: 1s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.active {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.progress-span {
+    border-radius: 3px;
+    width: 0%;
+    height: 100%;
+    display: block;
+    background-color: #232323;
+    transition: 0.2s;
+}
+
+.slide-play-state {
+    width: 16px;
+    height: 16px;
+}
+
+.slide-play-state::after {
+    content: 'ㄱ';
+}
+
+.slide-play-state.stop::after {
+    content: 'ㄴ';
+}
 
 @media screen and (max-width: 800px) {
     .slider-wrapper {
