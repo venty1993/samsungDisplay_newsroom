@@ -21,6 +21,10 @@
 }
 
 header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     padding: 25px 52px;
     border-bottom: rgb(208, 208, 208) 1px solid;
     box-shadow: 0px 4px 4px #00000010;
@@ -28,9 +32,10 @@ header {
     transition: 1s;
     height: 95px;
     overflow: hidden;
+    background-color: white;
 }
 
-.active {
+.header-active {
     height: 280px;
 }
 
@@ -116,12 +121,12 @@ nav {
     font-weight: bold;
 }
 
-.active .header-nav > li > a {
+.header-active .header-nav > li > a {
     left: 0px;
     transform: none;
 }
 
-.active .nav-inner {
+.header-active .nav-inner {
     display: block;
 }
 
