@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #slides {
+            max-width: 1280px;
+            padding: 0 32px;
+            margin: 0 auto;
+        }
+
+        .slide-contents-wrapper {
+            display: flex;
+            gap: 16px;
+        }
+
+        .content {
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: aqua;
+            height: 200px;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <section id="slides">
+
+        <div id="top-slide">
+            <ul class="slide-contents-wrapper">
+                <li class="content">1</li>
+                <li class="content">2</li>
+                <li class="content">3</li>
+                <li class="content">4</li>
+                <li class="content">5</li>
+                <li class="content">5</li>
+                <li class="content">5</li>
+                <li class="content">5</li>
+                <li class="content">5</li>
+                <li class="content">5</li>
+                <li class="content">6</li>
+            </ul>
+        </div>
+    
+        <div id="bottom-slide">
+            <ul class="slide-contents-wrapper">
+                <li class="content">1</li>
+                <li class="content">2</li>
+                <li class="content">3</li>
+                <li class="content">4</li>
+                <li class="content">5</li>
+                <li class="content">6</li>
+                <li class="content">7</li>
+                <li class="content">8</li>
+                <li class="content">9</li>
+                <li class="content">10</li>
+            </ul>
+        </div>
+    </section>
+    <script src="js/sub-slide.js"></script>
+</body>
+</html>

@@ -133,7 +133,7 @@
 }
 
 .progress-button{
-    width: 100%;
+    width: 24px;
     height: 6px;
     border-radius: 3px;
     background-color: #AAA;
@@ -143,8 +143,7 @@
 }
 
 .active {
-    width: 80px;
-    flex-shrink: 0;
+    width: 100%;
 }
 
 .progress-span {
