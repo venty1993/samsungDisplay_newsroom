@@ -1,5 +1,5 @@
+<html lang="ko">
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,11 @@
         * {
             margin: 0;
             padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100vw;
         }
 
         li {
@@ -21,9 +26,19 @@
             margin: 0 auto;
         }
 
+        #top-slide{
+            position: relative;
+        }
+
+        #bottom-slide {
+            position: relative;
+        }
+
         .slide-contents-wrapper {
             display: flex;
             gap: 16px;
+            transition-duration: 0.5s;
+            transition-property: transform;
         }
 
         .content {
@@ -32,6 +47,53 @@
             background-color: aqua;
             height: 200px;
             flex-shrink: 0;
+            transition: 0.2s linear;
+        }
+
+        /* 버튼 css */
+
+        .button-container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .button-container > a {
+            width: 32px;
+            height: 32px;
+            display: block;
+            background-color: #ffffff80;
+            position: absolute;
+            border-radius: 16px;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-container > a:first-child {
+            top: 50%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+
+        }
+
+        
+        .button-container > a:last-child {
+            top: 50%;
+            right: 0;
+            transform: translate(50%,-50%) rotate(135deg);
+        }
+        .button-container > a::after{
+            content: '';
+            width: 8px;
+            height: 8px;
+            display: block;
+            border: 2px solid #232323;
+            border-right: none;
+            border-bottom: none;
+            
         }
     </style>
 </head>
