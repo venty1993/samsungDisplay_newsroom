@@ -1,5 +1,6 @@
-makeSubSlide('top-slide', 3,3,1);
-makeSubSlide('bottom-slide', 5,4,2);
+makeSubSlide('top-slide', 5,3,1);
+makeSubSlide('bottom-slide', 4,2,1);
+
 
 
 setInterval(() => {
@@ -30,14 +31,22 @@ function makeSubSlide(slideId,pcSlideCount,tabletSlideCount,mobileSlideCount){
     const slide = document.getElementById(slideId);
     // 슬라이드의 자식요소인 ul태그
     const slideWrapper = slide.children[0];
-    
+    const pageWrapper = document.querySelector(`.${slideId}-pages`)
+    const slideCount = slideWrapper.childElementCount;
+
     let index = 0;
     let count;
     let containerWidth;
     let slideWidht;
     let gap = 16
+    let maxDragRange;
     
     checkWidth();
+    적용();
+
+    pageWrapper.lastElementChild.innerText = slideCount;
+
+
 
     window.addEventListener('resize' , ()=>{
         checkWidth();
@@ -57,6 +66,7 @@ function makeSubSlide(slideId,pcSlideCount,tabletSlideCount,mobileSlideCount){
         for(let i = 0 ; i < slideWrapper.childElementCount ; i ++ ){
             slideWrapper.children[i].style.width = `${slideWidht}px`;
         }
+        maxDragRange = slideCount * (slideWidht + 16) - (slideWidht + 16) * count;
     }
     
     function next(){
@@ -75,6 +85,7 @@ function makeSubSlide(slideId,pcSlideCount,tabletSlideCount,mobileSlideCount){
 
     function 적용(){
         slideWrapper.style.transform = `translateX(-${index * (slideWidht + gap)}px)`
+        pageWrapper.firstElementChild.innerText = index + 1;
     }
 
 
@@ -118,18 +129,24 @@ function makeSubSlide(slideId,pcSlideCount,tabletSlideCount,mobileSlideCount){
         })
 
         slide.addEventListener('mousemove', (e)=>{
-            
             if(clicked) {
                 now = e.clientX;
                 const moved = now - start;
-                slideWrapper.style.transform = `translateX(-${index * (slideWidht + 16) - moved}px)`;
+                console.log(index * (slideWidht + 16) - moved, maxDragRange)
+
+                if(index * (slideWidht + 16) - moved < maxDragRange ) {
+                    slideWrapper.style.transform = `translateX(-${index * (slideWidht + 16) - moved}px)`;
+                } else {
+                    slideWrapper.style.transform = `translateX(-${maxDragRange}px)`;
+
+                }
             }
         })
 
         function 드래그종료(){
             clicked = false;
             slideWrapper.style.transition = `0.5s`;
-            const nowPos = (index * (slideWidht + gap) - (now - start))  / slideWidht;
+            const nowPos = (index * (slideWidht + gap) - (end - start))  / slideWidht;
             index = Math.round(nowPos);
             if(index > slideWrapper.childElementCount-count){
                 index=slideWrapper.childElementCount-count;
@@ -138,7 +155,6 @@ function makeSubSlide(slideId,pcSlideCount,tabletSlideCount,mobileSlideCount){
                 index = 0;
             }
             적용();
-            console.log((Math.abs(nowPos)), index)
         }
 
     }
